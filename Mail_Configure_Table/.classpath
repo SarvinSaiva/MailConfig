@@ -111,6 +111,5 @@
 	<classpathentry kind="lib" path="D:/JarFiles/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="D:/JarFiles/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="D:/JarFiles/xslt.jar"/>
-	<classpathentry kind="src" path="/ZOptusQA_LIVE_TABLE"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

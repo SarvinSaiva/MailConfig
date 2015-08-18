@@ -21,13 +21,102 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
-import Zoptusmodule.TC001_Desktop_SignIn_Page;
-
 @SuppressWarnings("unused")
 public class JavaMail {
 
     public void main(String string, String javamail) throws IOException {
 
+    }
+
+    public void TC016_Mobility_WorkMilestones_Page_Exception(Exception e) {
+	String TC16 = e.getMessage();
+	System.out.println(TC16);
+
+    }
+
+    public void TC015_Mobility_WorkMaterials_Page_Exception(Exception e) {
+	String TC15 = e.getMessage();
+	System.out.println(TC15);
+    }
+
+    public void TC014_Mobility_IssueRegister_Page_Exception(Exception e) {
+	String TC14 = e.getMessage();
+	System.out.println(TC14);
+
+    }
+
+    public void TC013_Mobility_Documents_Page_Exception(Exception e) {
+	String TC13 = e.getMessage();
+	System.out.println(TC13);
+	this.constrtMailbody(TC13, "TC13");
+    }
+
+    public void TC012_Mobility_WorkDetails_Page_Exception(Exception e) {
+	String TC12 = e.getMessage();
+	System.out.println(TC12);
+    }
+
+    public void TC011_Mobility_Dashboard_Page_Exception(Exception e) {
+	String TC11 = e.getMessage();
+	System.out.println(TC11);
+
+    }
+
+    public void TC010_Mobility_SignIn_Page_Exception(Exception e) {
+	String TC10 = e.getMessage();
+	System.out.println(TC10);
+
+    }
+
+    public void TC009_Desktop_UserProfile_Page_Exception(Exception e) {
+	String TC9 = e.getMessage();
+	System.out.println(TC9);
+
+    }
+
+    public void TC008_Desktop_Reports_Page_Exception(Exception e) {
+	String TC8 = e.getMessage();
+	System.out.println(TC8);
+
+    }
+
+    public void TC007_Desktop_Maintanence_Page_Excpetion(Exception e) {
+	String TC7 = e.getMessage();
+	System.out.println(TC7);
+    }
+
+    public void TC006_Desktop_ProjectManagement_Page_Exception(Exception e) {
+
+	String TC6 = e.getMessage();
+	System.out.println(TC6);
+    }
+
+    public void TC005_Desktop_Commercial_Page_Exception(Exception e) {
+	String TC5 = e.getMessage();
+	System.out.println(TC5);
+    }
+
+    public void TC004_Desktop_Sites_Page_Exception(Exception e) {
+	String TC4 = e.getMessage();
+	System.out.println(TC4);
+    }
+
+    public void TC003_Desktop_WorkOrder_Page_Exception(Exception e) {
+	String TC3 = e.getMessage();
+	System.out.println(TC3);
+    }
+
+    public void TC002_Desktop_Home_Page_Exception(Exception e) {
+	String TC2 = e.getMessage();
+	System.out.println(TC2);
+    }
+
+    public void TC001_Desktop_SignIn_Page_Exception(Exception e) {
+	String TC1 = e.getMessage();
+	System.out.println(TC1);
+    }
+
+    public void constrtMailbody(String errmsg, String flag) {
 	// Recipient's email ID needs to be mentioned.
 	String to = "Wajahat.Baig@c.visionstream.com.au";
 	// String to = "balaji.m@chembiantech.com";
@@ -175,75 +264,14 @@ public class JavaMail {
 	     * );
 	     */
 
-	    Exception TC1 = new Exception();
-	    TC001_Desktop_SignIn_Page_Exception(TC1);
-	    System.out.println(TC1);
-
-	    Exception TC2 = new Exception();
-	    TC002_Desktop_Home_Page_Exception(TC2);
-	    System.out.println(TC2);
-
-	    Exception TC3 = new Exception();
-	    TC003_Desktop_WorkOrder_Page_Exception(TC3);
-	    System.out.println(TC3);
-
-	    Exception TC4 = new Exception();
-	    TC004_Desktop_Sites_Page_Exception(TC4);
-	    System.out.println(TC4);
-
-	    Exception TC5 = new Exception();
-	    TC005_Desktop_Commercial_Page_Exception(TC5);
-	    System.out.println(TC5);
-
-	    Exception TC6 = new Exception();
-	    TC006_Desktop_ProjectManagement_Page_Exception(TC6);
-	    System.out.println(TC6);
-
-	    Exception TC7 = new Exception();
-	    TC007_Desktop_Maintanence_Page_Excpetion(TC7);
-	    System.out.println(TC7);
-
-	    Exception TC8 = new Exception();
-	    TC008_Desktop_Reports_Page_Exception(TC8);
-	    System.out.println(TC8);
-
-	    Exception TC9 = new Exception();
-	    TC009_Desktop_UserProfile_Page_Exception(TC9);
-	    System.out.println(TC9);
-
-	    Exception TC10 = new Exception();
-	    TC010_Mobility_SignIn_Page_Exception(TC10);
-	    System.out.println(TC10);
-
-	    Exception TC11 = new Exception();
-	    TC011_Mobility_Dashboard_Page_Exception(TC11);
-	    System.out.println(TC11);
-
-	    Exception TC12 = new Exception();
-	    TC012_Mobility_WorkDetails_Page_Exception(TC12);
-	    System.out.println(TC12);
-
-	    Exception TC13 = new Exception();
-	    TC013_Mobility_Documents_Page_Exception(TC13);
-	    System.out.println(TC13);
-
-	    Exception TC14 = new Exception();
-	    TC014_Mobility_IssueRegister_Page_Exception(TC14);
-	    System.out.println(TC14);
-
-	    Exception TC15 = new Exception();
-	    TC015_Mobility_WorkMaterials_Page_Exception(TC15);
-	    System.out.println(TC15);
-
-	    Exception TC16 = new Exception();
-	    TC016_Mobility_WorkMilestones_Page_Exception(TC16);
-	    System.out.println(TC16);
-
 	    messageBodyPart
 		    .setContent(
 			    "Hi Team,<br/> &nbsp; &nbsp; &nbsp; &nbsp; This is an automated mail regarding <b>ZOptus Production Verification Scheduled Automation Test Run Results.</b><br/><br/><b>please check below error details,</b><br></br><table style='width:100%' border=1><tr><td style='color:Black'><b>S.No</b></td><td style='color:Green'><b>Page_Details</b></td><td style='color:Red'><b>Error_Details</b></td></tr><tr><td>1</td>"
-				    + "<td>TC001_Desktop_SignIn_Page</td><td style='color:Red'>"
-				    + TC1
+			    if(flag!=null && flag.equalsIgnoreCase("TC1")){
+				    + "<td>TC001_Desktop_SignIn_Page</td><td style='color:Red'>"+errmsg;
+			    }else{
+				 + "<td>TC001_Desktop_SignIn_Page</td><td style='color:Red'> No Error";
+			    }
 				    + "</td></tr><tr><td>2</td><td>TC002_Desktop_Home_Page</td><td style='color:Red'>"
 				    + TC2
 				    + "</td></tr><tr><td>3</td><td>TC003_Desktop_WorkOrder_Page</td><td style='color:Red'>"
@@ -309,94 +337,4 @@ public class JavaMail {
 	    mex.printStackTrace();
 	}
     }
-
-    public void TC016_Mobility_WorkMilestones_Page_Exception(Exception e) {
-	String TC16 = e.getMessage();
-	System.out.println(TC16);
-
-    }
-
-    public void TC015_Mobility_WorkMaterials_Page_Exception(Exception e) {
-	String TC15 = e.getMessage();
-	System.out.println(TC15);
-    }
-
-    public void TC014_Mobility_IssueRegister_Page_Exception(Exception e) {
-	String TC14 = e.getMessage();
-	System.out.println(TC14);
-
-    }
-
-    public void TC013_Mobility_Documents_Page_Exception(Exception e) {
-	String TC13 = e.getMessage();
-	System.out.println(TC13);
-    }
-
-    public void TC012_Mobility_WorkDetails_Page_Exception(Exception e) {
-	String TC12 = e.getMessage();
-	System.out.println(TC12);
-    }
-
-    public void TC011_Mobility_Dashboard_Page_Exception(Exception e) {
-	String TC11 = e.getMessage();
-	System.out.println(TC11);
-
-    }
-
-    public void TC010_Mobility_SignIn_Page_Exception(Exception e) {
-	String TC10 = e.getMessage();
-	System.out.println(TC10);
-
-    }
-
-    public void TC009_Desktop_UserProfile_Page_Exception(Exception e) {
-	String TC9 = e.getMessage();
-	System.out.println(TC9);
-
-    }
-
-    public void TC008_Desktop_Reports_Page_Exception(Exception e) {
-	String TC8 = e.getMessage();
-	System.out.println(TC8);
-
-    }
-
-    public void TC007_Desktop_Maintanence_Page_Excpetion(Exception e) {
-	String TC7 = e.getMessage();
-	System.out.println(TC7);
-    }
-
-    public void TC006_Desktop_ProjectManagement_Page_Exception(Exception e) {
-
-	String TC6 = e.getMessage();
-	System.out.println(TC6);
-    }
-
-    public void TC005_Desktop_Commercial_Page_Exception(Exception e) {
-	String TC5 = e.getMessage();
-	System.out.println(TC5);
-    }
-
-    public void TC004_Desktop_Sites_Page_Exception(Exception e) {
-	String TC4 = e.getMessage();
-	System.out.println(TC4);
-    }
-
-    public void TC003_Desktop_WorkOrder_Page_Exception(Exception e) {
-	String TC3 = e.getMessage();
-	System.out.println(TC3);
-    }
-
-    public void TC002_Desktop_Home_Page_Exception(Exception e) {
-	String TC2 = e.getMessage();
-	System.out.println(TC2);
-    }
-
-    public void TC001_Desktop_SignIn_Page_Exception(Exception e) {
-	String TC1 = e.getMessage();
-	TC001_Desktop_SignIn_Page TC1EXP = new TC001_Desktop_SignIn_Page();
-
-	System.out.println(TC1);
-    }
-
 }
