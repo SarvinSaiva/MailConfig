@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Zip and Mail has sent successfully to all stack holders...<br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10403" started-at="2015-08-12T19:00:53Z" finished-at="2015-08-12T19:01:03Z">
+    <groups>
+    </groups>
+    <test name="Mail_Config" duration-ms="10403" started-at="2015-08-12T19:00:53Z" finished-at="2015-08-12T19:01:03Z">
+      <class name="MC.Mail_Config">
+        <test-method status="PASS" signature="bft()[pri:0, instance:MC.Mail_Config@17a1d061]" name="bft" is-config="true" duration-ms="10" started-at="2015-08-13T00:30:53Z" finished-at="2015-08-13T00:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bft -->
+        <test-method status="PASS" signature="Sent_Mail()[pri:0, instance:MC.Mail_Config@17a1d061]" name="Sent_Mail" duration-ms="10384" started-at="2015-08-13T00:30:53Z" finished-at="2015-08-13T00:31:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Zip and Mail has sent successfully to all stack holders...<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Sent_Mail -->
+        <test-method status="PASS" signature="aft()[pri:0, instance:MC.Mail_Config@17a1d061]" name="aft" is-config="true" duration-ms="0" started-at="2015-08-13T00:31:03Z" finished-at="2015-08-13T00:31:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aft -->
+      </class> <!-- MC.Mail_Config -->
+    </test> <!-- Mail_Config -->
+  </suite> <!-- Suite -->
+</testng-results>
