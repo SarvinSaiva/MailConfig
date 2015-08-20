@@ -21,7 +21,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 @SuppressWarnings("unused")
-public class JavaMail {
+public class JavaMail_Old {
 
     public void TC016_Mobility_WorkMilestones_Page_Exception(Exception e) {
 	String TC16 = e.getMessage();
@@ -261,131 +261,103 @@ public class JavaMail {
 	    BodyPart messageBodyPart = new MimeBodyPart();
 
 	    String msgBody = "Hi Team,<br/> &nbsp; &nbsp; &nbsp; &nbsp; This is an automated mail regarding "
-		    + "<b>ZOptus Production Verification Scheduled Automation Test Run Results.</b><br/><br/><b>please check below error details,</b><br></br><table style='width:100%' border=1><tr><td style='color:Black'><b>S.No</b></td><td style='color:Green'><b>Page_Details</b></td><td style='color:Red'><b>Error_Details</b></td></tr><tr><td>1</td>"
-		    + "<table style='width:100%' border=1><tr><td style='color:Black'><b>S.No</b></td><td style='color:Green'><b>Page_Details</b></td><td style='color:Red'><b>Error_Details</b></td></tr><tr><td>1</td>    <td>TC001_Desktop_SignIn_Page</td><td style='color:Red'>";
+		    + "<b>ZOptus Production Verification Scheduled Automation Test Run Results.</b><br/><br/><b>please check below error details,</b><br></br><table style='width:100%' border=1><tr><td style='color:Black'><b>S.No</b></td><td style='color:Green'><b>Page_Details</b></td><td style='color:Red'><b>Error_Details</b></td></tr><tr><td>1</td>";
 	    if (flag != null && flag.equalsIgnoreCase("TC1")) {
 		msgBody += "<td>TC001_Desktop_SignIn_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>2</td><td>TC001_Desktop_SignIn_Page</td><td style='color:Red'> No Error";
 	    }
-
-	    msgBody += "</td></tr><tr><td>2</td><td>TC002_Desktop_Home_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC2")) {
 		msgBody += "<td>TC002_Desktop_Home_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC002_Desktop_Home_Page</td><td style='color:Red'> No Error";
 	    }
-	    msgBody += "</td></tr><tr><td>3</td><td>TC003_Desktop_WorkOrder_Page</td><td style='color:Red'>";
-
 	    if (flag != null && flag.equalsIgnoreCase("TC3")) {
 		msgBody += "<td>TC003_Desktop_WorkOrder_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC003_Desktop_WorkOrder_Page</td><td style='color:Red'> No Error";
 	    }
-
-	    msgBody += "</td></tr><tr><td>4</td><td>TC004_Desktop_Sites_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC4")) {
 		msgBody += "<td>TC004_Desktop_Sites_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC004_Desktop_Sites_Page</td><td style='color:Red'> No Error";
 	    }
-
-	    msgBody += "</td></tr><tr><td>5</td><td>TC005_Desktop_Commercial_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC5")) {
 		msgBody += "<td>TC005_Desktop_Commercial_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC005_Desktop_Commercial_Page</td><td style='color:Red'> No Error";
 	    }
-	    msgBody += "</td></tr><tr><td>6</td><td>TC006_Desktop_ProjectManagement_Page</td><td style='color:Red'>";
-
 	    if (flag != null && flag.equalsIgnoreCase("TC6")) {
 		msgBody += "<td>TC006_Desktop_ProjectManagement_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC006_Desktop_ProjectManagement_Page</td><td style='color:Red'> No Error";
 	    }
-
-	    msgBody += "</td></tr><tr><td>7</td><td>TC007_Desktop_Maintanence_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC7")) {
 		msgBody += "<td>TC007_Desktop_Maintanence_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC007_Desktop_Maintanence_Page</td><td style='color:Red'> No Error";
 	    }
-	    msgBody += "</td></tr><tr><td>8</td><td>TC008_Desktop_Reports_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC8")) {
 		msgBody += "<td>TC008_Desktop_Reports_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC008_Desktop_Reports_Page</td><td style='color:Red'> No Error";
 	    }
-	    msgBody += "</td></tr><tr><td>9</td><td>TC009_Desktop_UserProfile_Page</td><td style='color:Red'>";
-
 	    if (flag != null && flag.equalsIgnoreCase("TC9")) {
 		msgBody += "<td>TC009_Desktop_UserProfile_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC009_Desktop_UserProfile_Page</td><td style='color:Red'> No Error";
 	    }
-
-	    msgBody += "</td></tr><tr><td>10</td><td>TC010_Mobility_SignIn_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC10")) {
 		msgBody += "<td>TC010_Mobility_SignIn_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC010_Mobility_SignIn_Page</td><td style='color:Red'> No Error";
 	    }
-	    msgBody += "</td></tr><tr><td>11</td><td>TC011_Mobility_Dashboard_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC11")) {
 		msgBody += "<td>TC011_Mobility_Dashboard_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC011_Mobility_Dashboard_Page</td><td style='color:Red'> No Error";
 	    }
-
-	    msgBody += "</td></tr><tr><td>12</td><td>TC012_Mobility_WorkDetails_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC12")) {
 		msgBody += "<td>TC012_Mobility_WorkDetails_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC012_Mobility_WorkDetails_Page</td><td style='color:Red'> No Error";
 	    }
-
-	    msgBody += "</td></tr><tr><td>13</td><td>TC013_Mobility_Documents_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC13")) {
 		msgBody += "<td>TC013_Mobility_Documents_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC013_Mobility_Documents_Page</td><td style='color:Red'> No Error";
 	    }
-
-	    msgBody += "</td></tr><tr><td>14</td><td>TC014_Mobility_IssueRegister_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC14")) {
 		msgBody += "<td>TC014_Mobility_IssueRegister_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC014_Mobility_IssueRegister_Page</td><td style='color:Red'> No Error";
 	    }
-	    msgBody += "</td></tr><tr><td>15</td><td>TC015_Mobility_WorkMaterials_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC15")) {
 		msgBody += "<td>TC015_Mobility_WorkMaterials_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC015_Mobility_WorkMaterials_Page</td><td style='color:Red'> No Error";
 	    }
-	    msgBody += "</td></tr><tr><td>16</td><td>TC016_Mobility_WorkMilestones_Page</td><td style='color:Red'>";
 	    if (flag != null && flag.equalsIgnoreCase("TC16")) {
 		msgBody += "<td>TC016_Mobility_WorkMilestones_Page</td><td style='color:Red'>"
 			+ errmsg;
 	    } else {
 		msgBody += "<td>TC016_Mobility_WorkMilestones_Page</td><td style='color:Red'> No Error";
 	    }
-	    msgBody += "+</td></tr></table></br><b>";
 	    msgBody += "</td></tr></table></br><b>URL:</b><br/><b>Desktop:</b>&nbsp; <a>https://ss.vspl.net/Zoptus/</a><br/><b>Mobility:</b>&nbsp; <a>https://ss.vspl.net/ZOWP/</a><br/><br/>Please check the attached file for ZOptus Automated Test Results and let us know ( If Any issues).<br/><br/><b>How to View the Report?:</b><br/><br/> <b><u>Steps: <br/></u></b><br/>&nbsp; 1.Unzip the attached test report file<br/> &nbsp; 2.Click on the Extracted folder<br/> &nbsp; 3.Click on Intex.html to view the report<b><br/><br/>Note: Report best Viewed in Firefox.</b><br/><br/><br/><br/><br/><p><font size='3' color='black'>Thanks and Regards,<br/>Testing Team<br/></font><font size='3' color='orange'>Chembian</font><font size='3' color='gray'>Technologies Pvt. Ltd., </font></p>";
 
 	    messageBodyPart.setContent(msgBody, "text/html");

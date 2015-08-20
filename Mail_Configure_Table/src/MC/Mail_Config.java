@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import MailUtility.JavaMail;
+import MailUtility.JavaMail_Old;
 import MailUtility.ZipFile;
 
 public class Mail_Config {
@@ -18,8 +18,8 @@ public class Mail_Config {
 	ZipFile ZF = new ZipFile();
 	ZF.main(null);
 	Thread.sleep(10000);
-	JavaMail JavaMail = new JavaMail();
-	JavaMail.main("", "");
+	JavaMail_Old JavaMail = new JavaMail_Old();
+	JavaMail.constrtMailbody("", "");
 	Reporter.log("Zip and Mail has sent successfully to all stack holders...");
 
 	/*

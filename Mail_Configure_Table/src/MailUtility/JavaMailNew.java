@@ -21,7 +21,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 @SuppressWarnings("unused")
-public class JavaMail {
+public class JavaMailNew {
 
     public void TC016_Mobility_WorkMilestones_Page_Exception(Exception e) {
 	String TC16 = e.getMessage();
